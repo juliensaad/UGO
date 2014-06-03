@@ -31,6 +31,7 @@ CGRect arrowFrame;
     
     [self.personView bringSubviewToFront:_iconography];
     
+    _backgroundType.clipsToBounds = YES;
  
     
 
@@ -69,7 +70,7 @@ CGRect arrowFrame;
 
 
 
-#define PERSONPOSY 372
+#define PERSONPOSY (ISIPHONE5?372:412)
 - (IBAction)weeksPickClick:(id)sender {
 	
 	if(!self.isWeeksPickUp){
@@ -78,7 +79,7 @@ CGRect arrowFrame;
 		[UIView setAnimationDuration:0.7];
 		
 		[self.weeksPickView setFrame:CGRectMake(0, self.weeksPickView.frame.origin.y-PERSONPOSY, yScreenWidth, yScreenHeight)];
-		[self.personView setFrame:CGRectMake(0, -PERSONPOSY, yScreenWidth, yScreenHeight)];
+		[self.personView setFrame:CGRectMake(0, -372, yScreenWidth, yScreenHeight)];
 		
 		
 		CGRect newFrame = arrowFrame;
@@ -96,8 +97,8 @@ CGRect arrowFrame;
 		[UIView beginAnimations:nil context:NULL];
 		[UIView setAnimationBeginsFromCurrentState:YES];
 		[UIView setAnimationDuration:0.7];
-		
-		[self.weeksPickView setFrame:CGRectMake(0, PERSONPOSY, yScreenWidth, yScreenHeight)];
+        NSLog(@"down");
+        [self.weeksPickView setFrame:CGRectMake(0, PERSONPOSY+(ISIPHONE5?0:-40), yScreenWidth, yScreenHeight)];
 		[self.personView setFrame:CGRectMake(0, 0, yScreenWidth, yScreenHeight)];
 		//_smallArrow.frame = arrowFrame;
 		_smallArrow.transform = CGAffineTransformMakeRotation(0);

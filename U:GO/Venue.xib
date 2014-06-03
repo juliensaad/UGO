@@ -13,8 +13,11 @@
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnR-eJ-Vt5">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-kv-zbX">
-                            <rect key="frame" x="0.0" y="0.0" width="328" height="186"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="12-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-kv-zbX">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="QzS-Hs-chi"/>
+                            </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="suggestion_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Lr-Z5-dnD">
                             <rect key="frame" x="0.0" y="100" width="320" height="222"/>

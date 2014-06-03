@@ -29,31 +29,78 @@
     
     _mapView.delegate = self;
     _mapView.showsUserLocation = YES;
+    
+
+    
+    
+    
     // Do any additional setup after loading the view.
     
     // Set region to montreal
-  /*  MKUserLocation *userLocation = _mapView.userLocation;
+
     MKCoordinateRegion region =
     MKCoordinateRegionMakeWithDistance (
-                                        userLocation.location.coordinate, 20000, 20000);
+                                        CLLocationCoordinate2DMake(45.503146, -73.571321), 3000, 3000);
     [_mapView setRegion:region animated:NO];
    
    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
-    */
+   
 
     // Add an annotation
     // NSMutableArray* coordinates = [[NSMutableArray alloc] init];
     
-    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(45.5151042, -73.574669);
+    NSMutableArray* _sailTitles = [[NSMutableArray alloc] init];
     
-    //[coordinates addObject:@"]
-     // for()
-    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-    point.coordinate = coord;
-    point.title = @"Where am I?";
-    point.subtitle = @"I'm here!!!";
+    [_sailTitles addObject:@"Café Myriade"];
+    [_sailTitles addObject:@"Shopping"];
+    [_sailTitles addObject:@"Place Phillips"];
+    [_sailTitles addObject:@"Old Port of Montreal"];
+    [_sailTitles addObject:@"Terrasse"];
+    [_sailTitles addObject:@"Desert"];
     
-    [self.mapView addAnnotation:point];
+    NSMutableArray* points = [[NSMutableArray alloc] init];
+    
+    for(int i = 0;i<_sailTitles.count;i++){
+        CLLocationCoordinate2D coord;
+        switch (i) {
+            case 0:
+                coord = CLLocationCoordinate2DMake(45.496300, -73.578070);
+                break;
+            case 1:
+                coord = CLLocationCoordinate2DMake(45.496127, -73.576804);
+                break;
+            case 2:
+                coord = CLLocationCoordinate2DMake(45.503664, -73.567819);
+                break;
+            case 3:
+                coord = CLLocationCoordinate2DMake(45.502340, -73.553875);
+                break;
+            case 4:
+                coord = CLLocationCoordinate2DMake(45.504070, -73.554648);
+                break;
+            case 5:
+                coord = CLLocationCoordinate2DMake(45.496300, -73.578070);
+                break;
+            case 6:
+                coord = CLLocationCoordinate2DMake(45.507787, -73.560508);
+                break;
+                
+            default:
+                break;
+        }
+        
+        
+        MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+        point.coordinate = coord;
+        point.title = _sailTitles[i];
+        
+        point.subtitle = [NSString stringWithFormat:@"%d", i+1];
+        
+
+        [self.mapView addAnnotation:point];
+    }
+    
+   
 }
 
 #pragma mark -
@@ -74,8 +121,9 @@
         annotationView.canShowCallout = YES;
         annotationView.image = [UIImage imageNamed:@"marker"];
         
+        
         UILabel* l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, annotationView.frame.size.width, annotationView.frame.size.height-5)];
-        l.text = @"1";
+        l.text = [annotationView.annotation subtitle];
         l.adjustsFontSizeToFitWidth = YES;
         l.textAlignment = NSTextAlignmentCenter;
         l.textColor = [UIColor whiteColor];

@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *placeName;
 @property (weak, nonatomic) IBOutlet UILabel *hours;
-@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
+
+@property (weak, nonatomic) IBOutlet UILabel *descriptionTextLabel;
 
 @end

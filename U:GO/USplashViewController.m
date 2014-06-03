@@ -101,10 +101,13 @@
 
 						 } completion:^(BOOL finished){
                              
-                             if(NO){
-							 [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
+                             if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstTime"]){
+                                 
+                                
+                                 [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
                                  
                              }else{
+                                  [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstTime"];
                                  [self transition];
                                  _uLetter.hidden = YES;
                                  _oLetter.hidden = YES;
@@ -229,7 +232,7 @@
         return pageContentViewController;
     }else{
         
-        PageTwoViewController* page2 = [self.storyboard instantiateViewControllerWithIdentifier:@"PageTwo"];
+        PageTwoViewController* page2 = [self.storyboard instantiateViewControllerWithIdentifier:[NSString stringWithFormat:@"Page%lu",(unsigned long)index]];
         
         
         BOOL found = NO;
@@ -254,6 +257,10 @@
             fr.origin.y = 363;
             _phone.frame = fr;
             [UIView commitAnimations];
+            
+            if(!ISIPHONE5){
+                _phone.hidden = YES;
+            }
         }
         
         page2.pageIndex = index;

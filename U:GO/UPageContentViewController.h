@@ -15,5 +15,8 @@
 @property NSUInteger pageIndex;
 @property NSString *titleText;
 @property NSString *imageFile;
+@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
+
+@property BOOL goAnimation;
 
 @end

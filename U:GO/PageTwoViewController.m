@@ -1,20 +1,20 @@
 //
-//  UPageContentViewController.m
+//  PageTwoViewController.m
 //  U:GO
 //
-//  Created by Julien Saad on 2014-06-01.
+//  Created by Julien Saad on 2014-06-03.
 //  Copyright (c) 2014 Third Bridge. All rights reserved.
 //
 
-#import "UPageContentViewController.h"
+#import "PageTwoViewController.h"
 
-@interface UPageContentViewController ()
+@interface PageTwoViewController ()
 
 @end
 
-@implementation UPageContentViewController
+@implementation PageTwoViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -22,29 +22,20 @@
     }
     return self;
 }
-
 -(void)viewWillAppear:(BOOL)animated{
-    //_goAnimation = YES;
-    // if(self.goAnimation){
+    NSLog(@"OMG");
     
-        self.view.backgroundColor = [UIColor clearColor];
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:1.3];
-        
-    // self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.66];
-        _welcomeLabel.alpha = 1.0;
-        [UIView commitAnimations];
-    //}
+    self.view.backgroundColor = [UIColor clearColor];
+    [UIView beginAnimations:nil context:nil];
+    //[UIView setAnimationDuration:10.0];
     
+    // _welbomeLabel.alpha = 0.0;
+    [UIView commitAnimations];
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
-    self.titleLabel.text = self.titleText;
-    
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,9 +43,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-@end
-
 
 /*
 #pragma mark - Navigation
@@ -66,3 +54,5 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+@end

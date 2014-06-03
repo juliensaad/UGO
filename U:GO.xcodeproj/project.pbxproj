@@ -16,6 +16,13 @@
 		0C045A0C183E5C9F000D9A60 /* UHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C045A0A183E5C9F000D9A60 /* UHomePageViewController.m */; };
 		0C08EC8D187A31EC0095E712 /* URequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EC8C187A31EC0095E712 /* URequests.m */; };
 		0C08EC90187A320C0095E712 /* WSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EC8F187A320C0095E712 /* WSingleton.m */; };
+		0C0A7BB2193E3D13002639C0 /* PageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A7BB1193E3D13002639C0 /* PageTwoViewController.m */; };
+		0C0A7BB4193E4159002639C0 /* phone1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A7BB3193E4159002639C0 /* phone1@2x.png */; };
+		0C0A7BB8193E4925002639C0 /* phone2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A7BB5193E4925002639C0 /* phone2@2x.png */; };
+		0C0A7BB9193E4925002639C0 /* phone3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A7BB6193E4925002639C0 /* phone3@2x.png */; };
+		0C0A7BBA193E4925002639C0 /* phone4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A7BB7193E4925002639C0 /* phone4@2x.png */; };
+		0C0A7BBC193E4D3C002639C0 /* phone5btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A7BBB193E4D3C002639C0 /* phone5btn@2x.png */; };
+		0C0A7BBF193E4DF7002639C0 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C0A7BBE193E4DF7002639C0 /* OpenSans-Italic.ttf */; };
 		0C1721D318985DA5007F7230 /* btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1721D218985DA5007F7230 /* btn@2x.png */; };
 		0C24B769188EE51500F7D3A4 /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24B768188EE51500F7D3A4 /* Persona.m */; };
 		0C24B76F188EE5B600F7D3A4 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24B76E188EE5B600F7D3A4 /* Venue.m */; };
@@ -62,7 +69,6 @@
 		0C57C68C193E362100F7BA83 /* type2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C57C687193E362100F7BA83 /* type2@2x.png */; };
 		0C736E25189EF21C0079F938 /* persona_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C736E24189EF21C0079F938 /* persona_border@2x.png */; };
 		0C80E1C9193BD6030091358B /* UPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80E1C8193BD6030091358B /* UPageContentViewController.m */; };
-		0C8EA24B187A31070022F77C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8EA24A187A31070022F77C /* CFNetwork.framework */; };
 		0C8EA24D187A310E0022F77C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8EA24C187A310D0022F77C /* SystemConfiguration.framework */; };
 		0C9C03CE18A84752006DDD2D /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C03CD18A84752006DDD2D /* MyLocation.m */; };
 		0CAB05F1183EB9930080E718 /* 11-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB05EF183EB9930080E718 /* 11-black@2x.png */; };
@@ -197,6 +203,14 @@
 		0C08EC8C187A31EC0095E712 /* URequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URequests.m; sourceTree = "<group>"; };
 		0C08EC8E187A320C0095E712 /* WSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSingleton.h; sourceTree = "<group>"; };
 		0C08EC8F187A320C0095E712 /* WSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSingleton.m; sourceTree = "<group>"; };
+		0C0A7BB0193E3D13002639C0 /* PageTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoViewController.h; sourceTree = "<group>"; };
+		0C0A7BB1193E3D13002639C0 /* PageTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTwoViewController.m; sourceTree = "<group>"; };
+		0C0A7BB3193E4159002639C0 /* phone1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone1@2x.png"; sourceTree = "<group>"; };
+		0C0A7BB5193E4925002639C0 /* phone2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone2@2x.png"; sourceTree = "<group>"; };
+		0C0A7BB6193E4925002639C0 /* phone3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone3@2x.png"; sourceTree = "<group>"; };
+		0C0A7BB7193E4925002639C0 /* phone4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone4@2x.png"; sourceTree = "<group>"; };
+		0C0A7BBB193E4D3C002639C0 /* phone5btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone5btn@2x.png"; sourceTree = "<group>"; };
+		0C0A7BBE193E4DF7002639C0 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		0C1721D218985DA5007F7230 /* btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn@2x.png"; sourceTree = "<group>"; };
 		0C24B767188EE51500F7D3A4 /* Persona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
 		0C24B768188EE51500F7D3A4 /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
@@ -412,7 +426,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8EA24D187A310E0022F77C /* SystemConfiguration.framework in Frameworks */,
-				0C8EA24B187A31070022F77C /* CFNetwork.framework in Frameworks */,
 				0C030341187A0A6100E9B33D /* MapKit.framework in Frameworks */,
 				0CDEE061183E4E5000F4B5EB /* QuartzCore.framework in Frameworks */,
 				0CC127A7183713FA0065A988 /* CoreGraphics.framework in Frameworks */,
@@ -571,6 +584,11 @@
 				0CE3279B186796C700363BB9 /* fonts */,
 				0CDD052F183BC79E0046F89E /* images */,
 				0CB19F8518C681060042AFF6 /* card@2x.png */,
+				0C0A7BB3193E4159002639C0 /* phone1@2x.png */,
+				0C0A7BB5193E4925002639C0 /* phone2@2x.png */,
+				0C0A7BB6193E4925002639C0 /* phone3@2x.png */,
+				0C0A7BB7193E4925002639C0 /* phone4@2x.png */,
+				0C0A7BBB193E4D3C002639C0 /* phone5btn@2x.png */,
 				0C527F4318D7500200A353BF /* closeButton@2x.png */,
 				0C4957A0192C1DFB0050B4AE /* typePictures */,
 				0C527F3218D745E400A353BF /* callButton@2x.png */,
@@ -596,6 +614,8 @@
 				0C045A0A183E5C9F000D9A60 /* UHomePageViewController.m */,
 				0CE3D5B018E1DD1100C724E4 /* IDM */,
 				0CC127B6183713FA0065A988 /* Main.storyboard */,
+				0C0A7BB0193E3D13002639C0 /* PageTwoViewController.h */,
+				0C0A7BB1193E3D13002639C0 /* PageTwoViewController.m */,
 				0CD2913919366B0E007AC724 /* InstructionCell.h */,
 				0CD2913A19366B0E007AC724 /* InstructionCell.m */,
 				0C80E1C7193BD6030091358B /* UPageContentViewController.h */,
@@ -723,6 +743,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB4940D1897424B009DF00C /* OpenSans-Regular.ttf */,
+				0C0A7BBE193E4DF7002639C0 /* OpenSans-Italic.ttf */,
 				0CB4940E1897424B009DF00C /* OpenSans-Semibold.ttf */,
 				0CE32799186796C500363BB9 /* DroidSans-Bold.ttf */,
 				0CE3279A186796C500363BB9 /* DroidSans.ttf */,
@@ -885,7 +906,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = U;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Third Bridge";
 				TargetAttributes = {
 					0CC127A0183713FA0065A988 = {
@@ -920,6 +941,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0A7BB4193E4159002639C0 /* phone1@2x.png in Resources */,
 				0C4957BC192C25620050B4AE /* 8.png in Resources */,
 				0C527F2F18D741B200A353BF /* favouritesCell@2x.png in Resources */,
 				0C57C688193E362100F7BA83 /* type1@2x.png in Resources */,
@@ -995,12 +1017,15 @@
 				0CDEE066183E4FAE00F4B5EB /* USideMenuViewController.xib in Resources */,
 				0CC127AF183713FA0065A988 /* InfoPlist.strings in Resources */,
 				0CB4940118973C9D009DF00C /* splash_shadow@2x.png in Resources */,
+				0C0A7BB9193E4925002639C0 /* phone3@2x.png in Resources */,
 				0CB4940A18973ED6009DF00C /* splash_btncolor@2x.png in Resources */,
 				0CB19F7818C677A50042AFF6 /* fav_button@2x.png in Resources */,
 				0CE700ED1896C8430041E16E /* DroidSans.ttf in Resources */,
 				0CBF6F4818371E6B00AC77F4 /* toplogo@2x.png in Resources */,
+				0C0A7BBF193E4DF7002639C0 /* OpenSans-Italic.ttf in Resources */,
 				0C527F3318D745E400A353BF /* callButton@2x.png in Resources */,
 				0C030345187A0CC500E9B33D /* 41_aboutus@2x.png in Resources */,
+				0C0A7BB8193E4925002639C0 /* phone2@2x.png in Resources */,
 				0C4957C2192C25620050B4AE /* 14.png in Resources */,
 				0C57C68A193E362100F7BA83 /* type4@2x.png in Resources */,
 				0C527F4218D74E8000A353BF /* fbConnect@2x.png in Resources */,
@@ -1008,7 +1033,9 @@
 				0C4957C0192C25620050B4AE /* 12.png in Resources */,
 				0CB19F8618C681060042AFF6 /* card@2x.png in Resources */,
 				0CB19F7618C677740042AFF6 /* directions_button@2x.png in Resources */,
+				0C0A7BBC193E4D3C002639C0 /* phone5btn@2x.png in Resources */,
 				0CB19F7C18C67EC60042AFF6 /* arrow_map@2x.png in Resources */,
+				0C0A7BBA193E4925002639C0 /* phone4@2x.png in Resources */,
 				0CB4940C18973ED6009DF00C /* splash_btnwhite@2x.png in Resources */,
 				0CE3279F186798BB00363BB9 /* weekpick@2x.png in Resources */,
 				0CE3279D186797D900363BB9 /* suggestion_face@2x.png in Resources */,
@@ -1074,6 +1101,7 @@
 				0CC2795D187600D900EDE0BF /* UKingViewController.m in Sources */,
 				0CE3D5FA18E1DD1100C724E4 /* AFNetworkReachabilityManager.m in Sources */,
 				0C03033F187A0A3F00E9B33D /* USailViewController.m in Sources */,
+				0C0A7BB2193E3D13002639C0 /* PageTwoViewController.m in Sources */,
 				0CE3D5F918E1DD1100C724E4 /* AFHTTPSessionManager.m in Sources */,
 				0CE3D5FD18E1DD1100C724E4 /* AFURLRequestSerialization.m in Sources */,
 				0C08EC90187A320C0095E712 /* WSingleton.m in Sources */,
@@ -1140,7 +1168,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1179,7 +1206,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1249,7 +1275,6 @@
 		0CC127D7183713FA0065A988 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/U:GO.app/U:GO";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1272,7 +1297,6 @@
 		0CC127D8183713FA0065A988 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/U:GO.app/U:GO";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

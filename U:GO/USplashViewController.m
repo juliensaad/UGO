@@ -10,8 +10,10 @@
 #import "WSingleton.h"
 #import "URequests.h"
 
-@interface USplashViewController ()
+#import "PageTwoViewController.h"
 
+@interface USplashViewController ()
+@property UIImageView* phone;
 @end
 
 @implementation USplashViewController
@@ -99,7 +101,7 @@
 
 						 } completion:^(BOOL finished){
                              
-                             if(YES){
+                             if(NO){
 							 [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
                                  
                              }else{
@@ -122,20 +124,14 @@
 }
 
 -(void)transition{
-    //	[self performSegueWithIdentifier:@"venue" sender:self];
-    //	[self performSegueWithIdentifier:@"slider" sender:self];
-    
-    // Create the data model
-    _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
-    _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
-    
+
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"slider"];
     self.pageViewController.dataSource = self;
     
-    UPageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    UIViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     // Change the size of page view controller
     self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -152,15 +148,54 @@
     for (UIView *view in self.pageViewController.view.subviews ) {
         if ([view isKindOfClass:[UIScrollView class]]) {
             UIScrollView *scroll = (UIScrollView *)view;
-            scroll.bounces = NO;
+            // scroll.bounces = NO;
             scroll.scrollEnabled = YES;
             scroll.pagingEnabled = YES;
             
         }
     }
+    
+    self.pageViewController.view.backgroundColor = [UIColor clearColor];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.8];
+    
+    self.pageViewController.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.66];
+    
+   
+    
+    [UIView commitAnimations];
+    
+   
+   
+    [self performSelector:@selector(changePage:) withObject:UIPageViewControllerNavigationDirectionForward afterDelay:0.0];
+   
+    
+   
 
 }
 
+- (void)changePage:(UIPageViewControllerNavigationDirection)direction {
+    NSUInteger pageIndex = ((UPageContentViewController *) [_pageViewController.viewControllers objectAtIndex:0]).pageIndex;
+    
+    if (direction == UIPageViewControllerNavigationDirectionForward) {
+        pageIndex++;
+    }
+    else {
+        pageIndex--;
+    }
+    
+    UIViewController *viewController = [self viewControllerAtIndex:pageIndex];
+    
+    
+    if (viewController == nil) {
+        return;
+    }
+    
+    [_pageViewController setViewControllers:@[viewController]
+                                  direction:direction
+                                   animated:YES
+                                 completion:nil];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -172,41 +207,92 @@
 
 
 - (IBAction)startWalkthrough:(id)sender {
-    UPageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    UIViewController *startingViewController = [self viewControllerAtIndex:0];
+    
+    
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
 }
 
-- (UPageContentViewController *)viewControllerAtIndex:(NSUInteger)index
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
-        return nil;
+    
+    NSLog(@"%lu index", (unsigned long)index);
+    if(index ==0){
+    // Create a new view controller and pass suitable data.
+        UPageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContent"];
+        pageContentViewController.imageFile = self.pageImages[index];
+        pageContentViewController.titleText = self.pageTitles[index];
+        pageContentViewController.pageIndex = index;
+        
+        
+        return pageContentViewController;
+    }else{
+        
+        PageTwoViewController* page2 = [self.storyboard instantiateViewControllerWithIdentifier:@"PageTwo"];
+        
+        
+        BOOL found = NO;
+        for(UIView *v in _pageViewController.view.subviews){
+            if(v.tag==123){
+                found = YES;
+            }
+        }
+        if(!found){
+            _phone = [[UIImageView alloc] initWithFrame:CGRectMake(72, 600, 177, 205)];
+            _phone.tag = 123;
+          
+              [_pageViewController.view addSubview:_phone];
+            
+            
+            _phone.image = [UIImage imageNamed:[NSString stringWithFormat:@"phone1.png"]];
+            
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:0.4];
+            [UIView setAnimationDelay:0.4];
+            CGRect fr = _phone.frame;
+            fr.origin.y = 363;
+            _phone.frame = fr;
+            [UIView commitAnimations];
+        }
+        
+        page2.pageIndex = index;
+        return page2;
     }
     
-    // Create a new view controller and pass suitable data.
-    UPageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContent"];
-    pageContentViewController.imageFile = self.pageImages[index];
-    pageContentViewController.titleText = self.pageTitles[index];
-    pageContentViewController.pageIndex = index;
-    
-    return pageContentViewController;
+    return nil;
 }
 
 #pragma mark - Page View Controller Data Source
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed
+{
+    UIViewController *vc = [pageViewController.viewControllers lastObject];
+    
+    if([((UPageContentViewController*) vc)pageIndex]==0){
+        
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.4];
+        [UIView setAnimationDelay:0.0];
+        CGRect fr = _phone.frame;
+        fr.origin.y = 600;
+        _phone.frame = fr;
+        [UIView commitAnimations];
+    }else{
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDuration:0.4];
+        [UIView setAnimationDelay:0.0];
+        CGRect fr = _phone.frame;
+        fr.origin.y = 363;
+        _phone.frame = fr;
+        [UIView commitAnimations];
+        
+        
+        _phone.image = [UIImage imageNamed:[NSString stringWithFormat:@"phone%lu.png",[((UPageContentViewController*) vc)pageIndex]
+                        ]];
 
--(void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed{
-    
-    NSLog(@"switch");
-   /* [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationDelay:1.0];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
-    
-
-    
-    [UIView commitAnimations];*/
-    
+    }
 }
+
 
 -(void)pageViewController:(UIPageViewController *)pageViewController willTransitionToViewControllers:(NSArray *)pendingViewControllers{
     NSLog(@"coucou");
@@ -233,7 +319,7 @@
     }
     
     index++;
-    if (index == [self.pageTitles count]) {
+    if (index == 5) {
         return nil;
     }
     return [self viewControllerAtIndex:index];
@@ -242,7 +328,7 @@
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.pageTitles count];
+    return 5;
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController

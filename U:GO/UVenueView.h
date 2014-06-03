@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIView *personView;
 @property (weak, nonatomic) IBOutlet UIImageView *smallArrow;
 @property (weak, nonatomic) IBOutlet UIImageView *personaFace;
+@property (weak, nonatomic) IBOutlet UIView *titleBar;
 
 @property (weak, nonatomic) IBOutlet UIButton *priceButton;
 @property (weak, nonatomic) IBOutlet UIButton *fbButton;

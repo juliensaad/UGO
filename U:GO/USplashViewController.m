@@ -14,6 +14,8 @@
 
 @interface USplashViewController ()
 @property UIImageView* phone;
+
+@property UIImageView* dots;
 @end
 
 @implementation USplashViewController
@@ -28,7 +30,7 @@
 }
 
 #define G_Y_FINAL 236
-#define U_X_FINAL 58
+#define U_X_FINAL 56.5
 #define O_X_FINAL 197
 
 - (void)viewDidLoad
@@ -101,7 +103,7 @@
 
 						 } completion:^(BOOL finished){
                              
-                             if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstTime"]){
+                             if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstTime"]){
                                  
                                 
                                  [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
@@ -164,14 +166,16 @@
     
     self.pageViewController.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.66];
     
-   
-    
     [UIView commitAnimations];
     
    
+    [self performSelector:@selector(changePage:) withObject:UIPageViewControllerNavigationDirectionForward afterDelay:2.0];
    
-    [self performSelector:@selector(changePage:) withObject:UIPageViewControllerNavigationDirectionForward afterDelay:0.0];
-   
+    
+    _dots = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"dots1.png"]];
+    
+    _dots.frame = CGRectMake(30, 450, _dots.frame.size.width, _dots.frame.size.height);
+    [self.pageViewController.view addSubview:_dots];
     
    
 
@@ -248,7 +252,23 @@
               [_pageViewController.view addSubview:_phone];
             
             
-            _phone.image = [UIImage imageNamed:[NSString stringWithFormat:@"phone1.png"]];
+
+            [UIView transitionWithView:_phone
+                              duration:0.6f
+                               options:UIViewAnimationOptionTransitionCrossDissolve
+                            animations:^{
+                                _phone.image = [UIImage imageNamed:[NSString stringWithFormat:@"phone1.png"]];
+                            } completion:nil];
+            
+            [UIView transitionWithView:_dots
+                              duration:0.6f
+                               options:UIViewAnimationOptionTransitionCrossDissolve
+                            animations:^{
+                                _dots.image = [UIImage imageNamed:@"dots2.png"];
+                                
+                                
+                            } completion:nil];
+           
             
             [UIView beginAnimations:nil context:nil];
             [UIView setAnimationDuration:0.4];
@@ -291,12 +311,30 @@
         CGRect fr = _phone.frame;
         fr.origin.y = 363;
         _phone.frame = fr;
+        
+        
+        [UIView transitionWithView:_phone
+                          duration:0.6f
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:^{
+                            _phone.image = [UIImage imageNamed:[NSString stringWithFormat:@"phone%lu.png",(unsigned long)[((UPageContentViewController*) vc)pageIndex]
+                                                                ]];
+                           
+                        } completion:nil];
+        
+        [UIView transitionWithView:_dots
+                          duration:0.6f
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:^{
+                            _dots.image = [UIImage imageNamed:[NSString stringWithFormat:@"dots%lu.png",(unsigned long)[((UPageContentViewController*) vc)pageIndex]+1
+                                                               ]];
+
+                            
+                        } completion:nil];
+        
+        
         [UIView commitAnimations];
         
-        
-        _phone.image = [UIImage imageNamed:[NSString stringWithFormat:@"phone%lu.png",[((UPageContentViewController*) vc)pageIndex]
-                        ]];
-
     }
 }
 

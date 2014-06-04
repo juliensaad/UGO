@@ -45,7 +45,7 @@
     _sailDescriptions = [[NSMutableArray alloc] init];
     
     [_sailDescriptions addObject:@"Need a good coffee to kickstart the day? Head to Café Myriade to enjoy pastries with one of the best latte in town!"];
-    [_sailDescriptions addObject:@"Head downtown onto’s St-Catherine street for some shopping! If you want to spend a lot head do Holt Renfrew or Ogilvy. If you want to see art into a Mall, head to Eaton Center. And if you want to buy the classic Hudson Bay hunter’s bedding blanket, you’ll find it at the end of St-Catherine’s street across Union’s street."];
+    [_sailDescriptions addObject:@"Head downtown onto’s St-Catherine street for some shopping! To spend a lot, head to Holt Renfrew or Ogilvy. For art into a Mall, head to Eaton Center. And if you want to buy the classic Hudson Bay hunter’s bedding blanket, you’ll find it at the end of St-Catherine’s street across Union’s street."];
     [_sailDescriptions addObject:@"Enjoy a light lunch at the Place Phillips right in front of The Bay shopping Mall. Lots of food truck around!"];
     [_sailDescriptions addObject:@"Get to enjoy the beautiful view of the old port by crossing all along the De La Commune street! On your way back, get to St-Paul’s street; it’s the perfect time to buy some souvenir such as maple syrup or just a wolf shirt!"];
     [_sailDescriptions addObject:@"Walked a lot and feel you need a break? Why not enjoy a good apero on a Terasse? We recommend you the traditionnal Terasse Bonsecours or Hotel Nelligan."];
@@ -92,12 +92,12 @@
     }
     
     // Configure the cell.
-    cell.numberLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row+1];
+    cell.numberLabel.text = [NSString stringWithFormat:@"%d",indexPath.row+1];
     cell.placeName.text = _sailTitles[indexPath.row];
     cell.hours.text = _sailTimes[indexPath.row];
     cell.descriptionTextLabel.text = _sailDescriptions[indexPath.row];
     cell.descriptionTextLabel.adjustsFontSizeToFitWidth = YES;
-
+    cell.descriptionTextLabel.textAlignment = NSTextAlignmentCenter;
 
     return cell;
 }

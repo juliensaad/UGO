@@ -79,9 +79,6 @@
                 coord = CLLocationCoordinate2DMake(45.504070, -73.554648);
                 break;
             case 5:
-                coord = CLLocationCoordinate2DMake(45.496300, -73.578070);
-                break;
-            case 6:
                 coord = CLLocationCoordinate2DMake(45.507787, -73.560508);
                 break;
                 

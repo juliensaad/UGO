@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CC127A0183713FA0065A988"
-               BuildableName = "U:GO.app"
-               BlueprintName = "U:GO"
-               ReferencedContainer = "container:U:GO.xcodeproj">
+               BuildableName = "UGO.app"
+               BlueprintName = "UGO"
+               ReferencedContainer = "container:UGO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0CC127C1183713FA0065A988"
-               BuildableName = "U:GOTests.xctest"
-               BlueprintName = "U:GOTests"
-               ReferencedContainer = "container:U:GO.xcodeproj">
+               BuildableName = "UGOTests.xctest"
+               BlueprintName = "UGOTests"
+               ReferencedContainer = "container:UGO.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CC127A0183713FA0065A988"
-            BuildableName = "U:GO.app"
-            BlueprintName = "U:GO"
-            ReferencedContainer = "container:U:GO.xcodeproj">
+            BuildableName = "UGO.app"
+            BlueprintName = "UGO"
+            ReferencedContainer = "container:UGO.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CC127A0183713FA0065A988"
-            BuildableName = "U:GO.app"
-            BlueprintName = "U:GO"
-            ReferencedContainer = "container:U:GO.xcodeproj">
+            BuildableName = "UGO.app"
+            BlueprintName = "UGO"
+            ReferencedContainer = "container:UGO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0CC127A0183713FA0065A988"
-            BuildableName = "U:GO.app"
-            BlueprintName = "U:GO"
-            ReferencedContainer = "container:U:GO.xcodeproj">
+            BuildableName = "UGO.app"
+            BlueprintName = "UGO"
+            ReferencedContainer = "container:UGO.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

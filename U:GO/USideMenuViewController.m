@@ -51,6 +51,8 @@
     [_l3 setTitle:lFAVS forState:UIControlStateNormal];
     [_l4 setTitle:lABOUT forState:UIControlStateNormal];
     
+    [_l1 addTarget:self action:@selector(closeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [_l1 setEnabled:YES];
     _unlockLabel.text = lUNLOCKALL;
 }
 
@@ -126,7 +128,8 @@
 
 - (IBAction)closeButtonPressed:(id)sender {
 	
-	[self.sideMenuViewController closeMenuAnimated:YES completion:nil];	
+	[self.sideMenuViewController closeMenuAnimated:YES completion:nil];
+    NSLog(@"close");
 }
 
 - (IBAction)sailClick:(id)sender {
@@ -141,15 +144,6 @@
 
 }
 
-- (IBAction)weekClick:(id)sender {
-	UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-	UViewController* nextView = (UViewController *)[sb instantiateViewControllerWithIdentifier:@"HomePage"];
-
-	
-	UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:nextView];
-	[self.sideMenuViewController setMainViewController:controller animated:YES closeMenu:YES];
-
-}
 
 - (IBAction)favClick:(id)sender {
 	UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

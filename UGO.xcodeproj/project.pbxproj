@@ -14,6 +14,11 @@
 		0C030345187A0CC500E9B33D /* 41_aboutus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C030344187A0CC500E9B33D /* 41_aboutus@2x.png */; };
 		0C030348187A0CD100E9B33D /* UAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C030347187A0CD100E9B33D /* UAboutUsViewController.m */; };
 		0C045A0C183E5C9F000D9A60 /* UHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C045A0A183E5C9F000D9A60 /* UHomePageViewController.m */; };
+		0C073484193E9FFD008BA35D /* dots1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C07347F193E9FFD008BA35D /* dots1@2x.png */; };
+		0C073485193E9FFD008BA35D /* dots2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C073480193E9FFD008BA35D /* dots2@2x.png */; };
+		0C073486193E9FFD008BA35D /* dots3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C073481193E9FFD008BA35D /* dots3@2x.png */; };
+		0C073487193E9FFD008BA35D /* dots4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C073482193E9FFD008BA35D /* dots4@2x.png */; };
+		0C073488193E9FFD008BA35D /* dots5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C073483193E9FFD008BA35D /* dots5@2x.png */; };
 		0C08EC8D187A31EC0095E712 /* URequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EC8C187A31EC0095E712 /* URequests.m */; };
 		0C08EC90187A320C0095E712 /* WSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C08EC8F187A320C0095E712 /* WSingleton.m */; };
 		0C0A7BB2193E3D13002639C0 /* PageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A7BB1193E3D13002639C0 /* PageTwoViewController.m */; };
@@ -200,6 +205,11 @@
 		0C030347187A0CD100E9B33D /* UAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAboutUsViewController.m; sourceTree = "<group>"; };
 		0C045A09183E5C9F000D9A60 /* UHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UHomePageViewController.h; sourceTree = "<group>"; };
 		0C045A0A183E5C9F000D9A60 /* UHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHomePageViewController.m; sourceTree = "<group>"; };
+		0C07347F193E9FFD008BA35D /* dots1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots1@2x.png"; sourceTree = "<group>"; };
+		0C073480193E9FFD008BA35D /* dots2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots2@2x.png"; sourceTree = "<group>"; };
+		0C073481193E9FFD008BA35D /* dots3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots3@2x.png"; sourceTree = "<group>"; };
+		0C073482193E9FFD008BA35D /* dots4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots4@2x.png"; sourceTree = "<group>"; };
+		0C073483193E9FFD008BA35D /* dots5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots5@2x.png"; sourceTree = "<group>"; };
 		0C08EC8B187A31EC0095E712 /* URequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URequests.h; sourceTree = "<group>"; };
 		0C08EC8C187A31EC0095E712 /* URequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URequests.m; sourceTree = "<group>"; };
 		0C08EC8E187A320C0095E712 /* WSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSingleton.h; sourceTree = "<group>"; };
@@ -303,22 +313,22 @@
 		0CB49415189748A9009DF00C /* suggestion_frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "suggestion_frame@2x.png"; sourceTree = "<group>"; };
 		0CB4941718974BC2009DF00C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		0CBF6F4718371E6B00AC77F4 /* toplogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toplogo@2x.png"; sourceTree = "<group>"; };
-		0CC127A1183713FA0065A988 /* U:GO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "U:GO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC127A1183713FA0065A988 /* UGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC127A4183713FA0065A988 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0CC127A6183713FA0065A988 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0CC127A8183713FA0065A988 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		0CC127AC183713FA0065A988 /* U:GO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "U:GO-Info.plist"; sourceTree = "<group>"; };
+		0CC127AC183713FA0065A988 /* UGO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UGO-Info.plist"; sourceTree = "<group>"; };
 		0CC127AE183713FA0065A988 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0CC127B0183713FA0065A988 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0CC127B2183713FA0065A988 /* U:GO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "U:GO-Prefix.pch"; sourceTree = "<group>"; };
+		0CC127B2183713FA0065A988 /* UGO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UGO-Prefix.pch"; sourceTree = "<group>"; };
 		0CC127B3183713FA0065A988 /* UAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UAppDelegate.h; sourceTree = "<group>"; };
 		0CC127B4183713FA0065A988 /* UAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAppDelegate.m; sourceTree = "<group>"; };
 		0CC127B7183713FA0065A988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CC127B9183713FA0065A988 /* UViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UViewController.h; sourceTree = "<group>"; };
 		0CC127BA183713FA0065A988 /* UViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UViewController.m; sourceTree = "<group>"; };
-		0CC127C2183713FA0065A988 /* U:GOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "U:GOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CC127C2183713FA0065A988 /* UGOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UGOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC127C3183713FA0065A988 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0CC127CB183713FA0065A988 /* U:GOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "U:GOTests-Info.plist"; sourceTree = "<group>"; };
+		0CC127CB183713FA0065A988 /* UGOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UGOTests-Info.plist"; sourceTree = "<group>"; };
 		0CC127CD183713FA0065A988 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0CC127CF183713FA0065A988 /* U_GOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = U_GOTests.m; sourceTree = "<group>"; };
 		0CC127D9183714720065A988 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
@@ -555,8 +565,8 @@
 		0CC127A2183713FA0065A988 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CC127A1183713FA0065A988 /* U:GO.app */,
-				0CC127C2183713FA0065A988 /* U:GOTests.xctest */,
+				0CC127A1183713FA0065A988 /* UGO.app */,
+				0CC127C2183713FA0065A988 /* UGOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -604,6 +614,11 @@
 				0C527F3618D7467500A353BF /* getDirection@2x.png */,
 				0C3CF69718D8ED0C0073CA61 /* heart@2x.png */,
 				0C527F4118D74E8000A353BF /* fbConnect@2x.png */,
+				0C07347F193E9FFD008BA35D /* dots1@2x.png */,
+				0C073480193E9FFD008BA35D /* dots2@2x.png */,
+				0C073481193E9FFD008BA35D /* dots3@2x.png */,
+				0C073482193E9FFD008BA35D /* dots4@2x.png */,
+				0C073483193E9FFD008BA35D /* dots5@2x.png */,
 				0C527F4B18D750FC00A353BF /* about@2x.png */,
 				0C527F3418D7465000A353BF /* facebookImage@2x.png */,
 				0C527F2E18D741B200A353BF /* favouritesCell@2x.png */,
@@ -667,10 +682,10 @@
 		0CC127AB183713FA0065A988 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0CC127AC183713FA0065A988 /* U:GO-Info.plist */,
+				0CC127AC183713FA0065A988 /* UGO-Info.plist */,
 				0CC127AD183713FA0065A988 /* InfoPlist.strings */,
 				0CC127B0183713FA0065A988 /* main.m */,
-				0CC127B2183713FA0065A988 /* U:GO-Prefix.pch */,
+				0CC127B2183713FA0065A988 /* UGO-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -687,7 +702,7 @@
 		0CC127CA183713FA0065A988 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0CC127CB183713FA0065A988 /* U:GOTests-Info.plist */,
+				0CC127CB183713FA0065A988 /* UGOTests-Info.plist */,
 				0CC127CC183713FA0065A988 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -867,9 +882,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0CC127A0183713FA0065A988 /* U:GO */ = {
+		0CC127A0183713FA0065A988 /* UGO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CC127D3183713FA0065A988 /* Build configuration list for PBXNativeTarget "U:GO" */;
+			buildConfigurationList = 0CC127D3183713FA0065A988 /* Build configuration list for PBXNativeTarget "UGO" */;
 			buildPhases = (
 				0CC1279D183713FA0065A988 /* Sources */,
 				0CC1279E183713FA0065A988 /* Frameworks */,
@@ -880,14 +895,14 @@
 			);
 			dependencies = (
 			);
-			name = "U:GO";
+			name = UGO;
 			productName = "U:GO";
-			productReference = 0CC127A1183713FA0065A988 /* U:GO.app */;
+			productReference = 0CC127A1183713FA0065A988 /* UGO.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0CC127C1183713FA0065A988 /* U:GOTests */ = {
+		0CC127C1183713FA0065A988 /* UGOTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CC127D6183713FA0065A988 /* Build configuration list for PBXNativeTarget "U:GOTests" */;
+			buildConfigurationList = 0CC127D6183713FA0065A988 /* Build configuration list for PBXNativeTarget "UGOTests" */;
 			buildPhases = (
 				0CC127BE183713FA0065A988 /* Sources */,
 				0CC127BF183713FA0065A988 /* Frameworks */,
@@ -898,9 +913,9 @@
 			dependencies = (
 				0CC127C8183713FA0065A988 /* PBXTargetDependency */,
 			);
-			name = "U:GOTests";
+			name = UGOTests;
 			productName = "U:GOTests";
-			productReference = 0CC127C2183713FA0065A988 /* U:GOTests.xctest */;
+			productReference = 0CC127C2183713FA0065A988 /* UGOTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -921,7 +936,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0CC1279C183713FA0065A988 /* Build configuration list for PBXProject "U:GO" */;
+			buildConfigurationList = 0CC1279C183713FA0065A988 /* Build configuration list for PBXProject "UGO" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -934,8 +949,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CC127A0183713FA0065A988 /* U:GO */,
-				0CC127C1183713FA0065A988 /* U:GOTests */,
+				0CC127A0183713FA0065A988 /* UGO */,
+				0CC127C1183713FA0065A988 /* UGOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -967,6 +982,7 @@
 				0CDD053C183BC7A60046F89E /* 13-heart@2x.png in Resources */,
 				0CE327A118679A2300363BB9 /* page_bg@2x.png in Resources */,
 				0CB4940518973E69009DF00C /* LaunchImage@2x.png in Resources */,
+				0C073486193E9FFD008BA35D /* dots3@2x.png in Resources */,
 				0C57C68C193E362100F7BA83 /* type2@2x.png in Resources */,
 				0CB19F7218C676D90042AFF6 /* venue_buttons@2x.png in Resources */,
 				0CB4940F1897424E009DF00C /* OpenSans-Regular.ttf in Resources */,
@@ -981,6 +997,7 @@
 				0C527F3B18D7472100A353BF /* twitterImage@2x.png in Resources */,
 				0C527F3118D745CE00A353BF /* bottomButton@2x.png in Resources */,
 				0CDD0539183BC7A60046F89E /* 13-bubble@2x.png in Resources */,
+				0C073485193E9FFD008BA35D /* dots2@2x.png in Resources */,
 				0C4957C1192C25620050B4AE /* 13.png in Resources */,
 				0CC2795F1876046500EDE0BF /* small-arrow@2x.png in Resources */,
 				0CAB05F4183EBA690080E718 /* 11-mrbarman@2x.png in Resources */,
@@ -999,6 +1016,7 @@
 				0CD2913819366751007AC724 /* downArrow@2x.png in Resources */,
 				0CB493FE189735F6009DF00C /* splash_o@2x.png in Resources */,
 				0C4957C3192C25620050B4AE /* 15.png in Resources */,
+				0C073488193E9FFD008BA35D /* dots5@2x.png in Resources */,
 				0C4957BB192C25620050B4AE /* 7.png in Resources */,
 				0CC279671876079D00EDE0BF /* btn4@2x.png in Resources */,
 				0CB493FF189735F6009DF00C /* splash_u@2x.png in Resources */,
@@ -1013,6 +1031,7 @@
 				0C4957B6192C25620050B4AE /* 2.png in Resources */,
 				0C4957BE192C25620050B4AE /* 10.png in Resources */,
 				0CD2913D19366CF4007AC724 /* returnMap@2x.png in Resources */,
+				0C073484193E9FFD008BA35D /* dots1@2x.png in Resources */,
 				0CAB05FB183EBCEE0080E718 /* 12-graycircle@2x.png in Resources */,
 				0C3CF69818D8ED0C0073CA61 /* heart@2x.png in Resources */,
 				0C527895193CA26400EA3CFB /* 04-logo@2x.png in Resources */,
@@ -1025,6 +1044,7 @@
 				0C0A7BB9193E4925002639C0 /* phone3@2x.png in Resources */,
 				0CB4940A18973ED6009DF00C /* splash_btncolor@2x.png in Resources */,
 				0CB19F7818C677A50042AFF6 /* fav_button@2x.png in Resources */,
+				0C073487193E9FFD008BA35D /* dots4@2x.png in Resources */,
 				0CE700ED1896C8430041E16E /* DroidSans.ttf in Resources */,
 				0CBF6F4818371E6B00AC77F4 /* toplogo@2x.png in Resources */,
 				0C0A7BBF193E4DF7002639C0 /* OpenSans-Italic.ttf in Resources */,
@@ -1152,7 +1172,7 @@
 /* Begin PBXTargetDependency section */
 		0CC127C8183713FA0065A988 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0CC127A0183713FA0065A988 /* U:GO */;
+			target = 0CC127A0183713FA0065A988 /* UGO */;
 			targetProxy = 0CC127C7183713FA0065A988 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1266,9 +1286,9 @@
 					/Users/saadjulien/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "U:GO/U:GO-Prefix.pch";
-				INFOPLIST_FILE = "U:GO/U:GO-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "U:GO/UGO-Prefix.pch";
+				INFOPLIST_FILE = "U:GO/UGO-Info.plist";
+				PRODUCT_NAME = UGO;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1285,9 +1305,9 @@
 					/Users/saadjulien/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "U:GO/U:GO-Prefix.pch";
-				INFOPLIST_FILE = "U:GO/U:GO-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "U:GO/UGO-Prefix.pch";
+				INFOPLIST_FILE = "U:GO/UGO-Info.plist";
+				PRODUCT_NAME = UGO;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1308,8 +1328,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "U:GOTests/U:GOTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "U:GOTests/UGOTests-Info.plist";
+				PRODUCT_NAME = UGOTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1326,8 +1346,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "U:GO/U:GO-Prefix.pch";
-				INFOPLIST_FILE = "U:GOTests/U:GOTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "U:GOTests/UGOTests-Info.plist";
+				PRODUCT_NAME = UGOTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1336,7 +1356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CC1279C183713FA0065A988 /* Build configuration list for PBXProject "U:GO" */ = {
+		0CC1279C183713FA0065A988 /* Build configuration list for PBXProject "UGO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CC127D1183713FA0065A988 /* Debug */,
@@ -1345,7 +1365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CC127D3183713FA0065A988 /* Build configuration list for PBXNativeTarget "U:GO" */ = {
+		0CC127D3183713FA0065A988 /* Build configuration list for PBXNativeTarget "UGO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CC127D4183713FA0065A988 /* Debug */,
@@ -1354,7 +1374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CC127D6183713FA0065A988 /* Build configuration list for PBXNativeTarget "U:GOTests" */ = {
+		0CC127D6183713FA0065A988 /* Build configuration list for PBXNativeTarget "UGOTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CC127D7183713FA0065A988 /* Debug */,

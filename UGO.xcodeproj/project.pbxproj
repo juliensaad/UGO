@@ -67,6 +67,7 @@
 		0C527F4818D750DA00A353BF /* mapFav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C527F4718D750DA00A353BF /* mapFav@2x.png */; };
 		0C527F4A18D750F500A353BF /* favSide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C527F4918D750F500A353BF /* favSide@2x.png */; };
 		0C527F4C18D750FC00A353BF /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C527F4B18D750FC00A353BF /* about@2x.png */; };
+		0C52CFB5193F4593003D5C95 /* fr-directions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C52CFB4193F4593003D5C95 /* fr-directions@2x.png */; };
 		0C5381E6189C5FC900E73252 /* UPersonaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5381E5189C5FC900E73252 /* UPersonaView.m */; };
 		0C57C688193E362100F7BA83 /* type1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C57C683193E362100F7BA83 /* type1@2x.png */; };
 		0C57C689193E362100F7BA83 /* type0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C57C684193E362100F7BA83 /* type0@2x.png */; };
@@ -126,6 +127,8 @@
 		0CC279651876079D00EDE0BF /* btn2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC279611876079D00EDE0BF /* btn2@2x.png */; };
 		0CC279661876079D00EDE0BF /* btn3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC279621876079D00EDE0BF /* btn3@2x.png */; };
 		0CC279671876079D00EDE0BF /* btn4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC279631876079D00EDE0BF /* btn4@2x.png */; };
+		0CC68801193F41DA000998D4 /* fr-call@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC687FE193F41DA000998D4 /* fr-call@2x.png */; };
+		0CC68803193F41DA000998D4 /* fr-favorates@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CC68800193F41DA000998D4 /* fr-favorates@2x.png */; };
 		0CD0171918E1DF0E00AE1107 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD0171818E1DF0E00AE1107 /* FacebookSDK.framework */; };
 		0CD2913319365F81007AC724 /* USailFinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2913219365F81007AC724 /* USailFinalViewController.m */; };
 		0CD29136193664CF007AC724 /* UInscructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD29135193664CF007AC724 /* UInscructionsViewController.m */; };
@@ -266,6 +269,7 @@
 		0C527F4718D750DA00A353BF /* mapFav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapFav@2x.png"; sourceTree = "<group>"; };
 		0C527F4918D750F500A353BF /* favSide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favSide@2x.png"; sourceTree = "<group>"; };
 		0C527F4B18D750FC00A353BF /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
+		0C52CFB4193F4593003D5C95 /* fr-directions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fr-directions@2x.png"; sourceTree = "<group>"; };
 		0C5381E4189C5FC900E73252 /* UPersonaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPersonaView.h; sourceTree = "<group>"; };
 		0C5381E5189C5FC900E73252 /* UPersonaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPersonaView.m; sourceTree = "<group>"; };
 		0C57C683193E362100F7BA83 /* type1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type1@2x.png"; sourceTree = "<group>"; };
@@ -339,6 +343,8 @@
 		0CC279611876079D00EDE0BF /* btn2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn2@2x.png"; sourceTree = "<group>"; };
 		0CC279621876079D00EDE0BF /* btn3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn3@2x.png"; sourceTree = "<group>"; };
 		0CC279631876079D00EDE0BF /* btn4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn4@2x.png"; sourceTree = "<group>"; };
+		0CC687FE193F41DA000998D4 /* fr-call@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fr-call@2x.png"; sourceTree = "<group>"; };
+		0CC68800193F41DA000998D4 /* fr-favorates@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fr-favorates@2x.png"; sourceTree = "<group>"; };
 		0CD0171818E1DF0E00AE1107 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		0CD2913119365F81007AC724 /* USailFinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USailFinalViewController.h; sourceTree = "<group>"; };
 		0CD2913219365F81007AC724 /* USailFinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USailFinalViewController.m; sourceTree = "<group>"; };
@@ -715,6 +721,9 @@
 				0CB19F7318C6771F0042AFF6 /* facebook_button@2x.png */,
 				0CB19F7118C676D90042AFF6 /* venue_buttons@2x.png */,
 				0CB19F7518C677740042AFF6 /* directions_button@2x.png */,
+				0C52CFB4193F4593003D5C95 /* fr-directions@2x.png */,
+				0CC687FE193F41DA000998D4 /* fr-call@2x.png */,
+				0CC68800193F41DA000998D4 /* fr-favorates@2x.png */,
 				0C736E24189EF21C0079F938 /* persona_border@2x.png */,
 				0CC279601876079D00EDE0BF /* btn1@2x.png */,
 				0CC279611876079D00EDE0BF /* btn2@2x.png */,
@@ -1011,6 +1020,7 @@
 				0C4957C4192C25620050B4AE /* 16.png in Resources */,
 				0C1721D318985DA5007F7230 /* btn@2x.png in Resources */,
 				0CDD053F183BC7A60046F89E /* 13-pin@2x.png in Resources */,
+				0CC68803193F41DA000998D4 /* fr-favorates@2x.png in Resources */,
 				0CB19F7418C6771F0042AFF6 /* facebook_button@2x.png in Resources */,
 				0CE3D60C18E1DD1100C724E4 /* SVProgressHUD.bundle in Resources */,
 				0CD2913819366751007AC724 /* downArrow@2x.png in Resources */,
@@ -1025,6 +1035,7 @@
 				0C030343187A0AF200E9B33D /* 21_get_details@2x.png in Resources */,
 				0CAB05F1183EB9930080E718 /* 11-black@2x.png in Resources */,
 				0C736E25189EF21C0079F938 /* persona_border@2x.png in Resources */,
+				0CC68801193F41DA000998D4 /* fr-call@2x.png in Resources */,
 				0C527F3918D746DF00A353BF /* favImage@2x.png in Resources */,
 				0C4957B7192C25620050B4AE /* 3.png in Resources */,
 				0CDD053D183BC7A60046F89E /* 13-image@2x.png in Resources */,
@@ -1055,6 +1066,7 @@
 				0C57C68A193E362100F7BA83 /* type4@2x.png in Resources */,
 				0C527F4218D74E8000A353BF /* fbConnect@2x.png in Resources */,
 				0CEF95BA192CF6DB00801D34 /* pricebox@2x.png in Resources */,
+				0C52CFB5193F4593003D5C95 /* fr-directions@2x.png in Resources */,
 				0C4957C0192C25620050B4AE /* 12.png in Resources */,
 				0CB19F8618C681060042AFF6 /* card@2x.png in Resources */,
 				0CB19F7618C677740042AFF6 /* directions_button@2x.png in Resources */,

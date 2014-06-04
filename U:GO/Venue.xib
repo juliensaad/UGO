@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <objects>
@@ -23,7 +24,7 @@
                             <rect key="frame" x="0.0" y="100" width="320" height="222"/>
                         </imageView>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MS. DRINKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3h-lX-QMO" customClass="UGOLabel">
-                            <rect key="frame" x="44" y="235" width="232" height="21"/>
+                            <rect key="frame" x="44" y="235" width="232" height="20.5"/>
                             <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
                             <color key="textColor" red="0.17254901959999999" green="0.69803921570000005" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -64,14 +65,14 @@
                             <rect key="frame" x="0.0" y="458" width="320" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuC-kQ-nWA">
-                                    <rect key="frame" x="-1" y="1" width="110" height="50"/>
+                                    <rect key="frame" x="-1" y="0.0" width="110" height="50"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" image="bottomButton.png">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1E-Ly-Tar">
-                                    <rect key="frame" x="105" y="1" width="110" height="50"/>
+                                    <rect key="frame" x="105" y="0.0" width="110" height="50"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" image="bottomButton.png">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,18 +82,18 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-gf-PSb">
-                                    <rect key="frame" x="213" y="1" width="107" height="50"/>
+                                    <rect key="frame" x="213" y="0.0" width="107" height="50"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <state key="normal" image="bottomButton.png"/>
                                 </button>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="callButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hV-bv-bye">
-                                    <rect key="frame" x="45" y="13" width="19" height="29"/>
-                                </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getDirection.png" translatesAutoresizingMaskIntoConstraints="NO" id="rFX-ry-R6z">
-                                    <rect key="frame" x="122" y="13" width="77" height="29"/>
-                                </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="XH9-q7-9LU">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="XH9-q7-9LU">
                                     <rect key="frame" x="241" y="13" width="51" height="29"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="callButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hV-bv-bye">
+                                    <rect key="frame" x="-1" y="13" width="110" height="29"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getDirection.png" translatesAutoresizingMaskIntoConstraints="NO" id="rFX-ry-R6z">
+                                    <rect key="frame" x="110" y="13" width="100" height="29"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -142,13 +143,13 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91k-Sk-JQs">
-                                    <rect key="frame" x="92" y="55" width="80" height="21"/>
+                                    <rect key="frame" x="92" y="55" width="80" height="20.5"/>
                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                     <color key="textColor" red="0.17254902420000001" green="0.69803923369999998" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJI-ll-kNW">
-                                    <rect key="frame" x="172" y="55" width="106" height="21"/>
+                                    <rect key="frame" x="172" y="55" width="106" height="20.5"/>
                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                     <color key="textColor" red="0.74901962280000001" green="0.74901962280000001" blue="0.74901962280000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -181,7 +182,10 @@
                 <outlet property="bestTime" destination="91k-Sk-JQs" id="jcY-2O-iIW"/>
                 <outlet property="bottomContentView" destination="zyI-oA-KDu" id="ciE-ad-vh5"/>
                 <outlet property="callButton" destination="QuC-kQ-nWA" id="nq4-fC-4cm"/>
+                <outlet property="callImage" destination="1hV-bv-bye" id="u6g-8c-ZQB"/>
+                <outlet property="dirImage" destination="rFX-ry-R6z" id="D6w-Jw-C6I"/>
                 <outlet property="favButton" destination="Vfz-gf-PSb" id="58G-t9-pem"/>
+                <outlet property="favImage" destination="XH9-q7-9LU" id="5a1-ga-SDG"/>
                 <outlet property="fbButton" destination="bur-E1-gnA" id="Zn7-Uf-V97"/>
                 <outlet property="iconography" destination="Daz-mG-cbJ" id="5OR-oY-m4v"/>
                 <outlet property="middleBarView" destination="bYD-MN-i4J" id="OzL-rs-ic2"/>

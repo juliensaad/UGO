@@ -81,7 +81,7 @@
 
 -(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView{
     _unlockLabel.text = lUNLOCKALL;
-    NSLog(@"LOGOUT");
+    
     
     [[[WSingleton sharedManager] defaults]setObject:@"NO" forKey:@"isloggedin"];
 }

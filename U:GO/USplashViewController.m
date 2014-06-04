@@ -109,6 +109,8 @@
                                  [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
                                  
                              }else{
+                                 
+                                 [URequests getEventsWithSuccessFunction:@selector(nothing) andSender:self];
                                   [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstTime"];
                                  [self transition];
                                  _uLetter.hidden = YES;
@@ -122,6 +124,10 @@
 	//
 
 		
+}
+
+-(void)nothing{
+    
 }
 
 -(void)venueTime{

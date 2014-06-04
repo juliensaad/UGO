@@ -22,6 +22,15 @@ CGRect arrowFrame;
 }
 -(void)awakeFromNib{
     
+    if(ISFRENCH){
+        _callImage.image = [UIImage imageNamed:@"fr-call.png"];
+        _dirImage.image = [UIImage imageNamed:@"fr-directions.png"];
+        _favImage.image = [UIImage imageNamed:@"fr-favorates.png"];
+        [_callImage sizeToFit];
+        [_dirImage sizeToFit];
+        [_favImage sizeToFit];
+    }
+    
     _circle = [[UIView alloc] initWithFrame:CGRectMake(181, 187, 36, 36)];
     [self.personView addSubview:_circle];
     

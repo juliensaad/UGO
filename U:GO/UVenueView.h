@@ -57,5 +57,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bestTime;
+@property (weak, nonatomic) IBOutlet UIImageView *callImage;
+@property (weak, nonatomic) IBOutlet UIImageView *dirImage;
+@property (weak, nonatomic) IBOutlet UIImageView *favImage;
 
 @end

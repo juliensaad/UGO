@@ -103,7 +103,7 @@
 
 						 } completion:^(BOOL finished){
                              
-                             if(![[NSUserDefaults standardUserDefaults] boolForKey:@"firstTime"]){
+                             if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstTime"]){
                                  
                                 
                                  [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
@@ -131,7 +131,7 @@
 -(void)transition{
 
     // Create page view controller
-    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"slider"];
+     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"slider"];
     self.pageViewController.dataSource = self;
     
     UIViewController *startingViewController = [self viewControllerAtIndex:0];

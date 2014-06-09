@@ -104,8 +104,6 @@
 						 } completion:^(BOOL finished){
                              
                              if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstTime"]){
-                                 
-                                
                                  [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
                                  
                              }else{

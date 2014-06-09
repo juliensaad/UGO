@@ -72,7 +72,11 @@
 	
 	for(int i = 0;i<personaLabels.count;i++){
 
+        if(!ISFRENCH){
 		[[personaLabels objectAtIndex:i] setText:[[[_data objectAtIndex:i] name] uppercaseString]];
+        }else{
+           [[personaLabels objectAtIndex:i] setText:[[[_data objectAtIndex:i] personaNameFr] uppercaseString]];
+        }
 		[[personaLabels objectAtIndex:i] setFont:FONT_EXTRA_SMALL];
 	}
 	//[_selectGuideLabel setFont:FONT_BOLD_SMALL];

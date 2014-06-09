@@ -10,4 +10,7 @@
 
 @implementation Persona
 
+-(void)makePersonaName:(NSString*)name{
+    self.personaNameFr = name;
+}
 @end

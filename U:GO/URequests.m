@@ -88,6 +88,7 @@
 						  options:kNilOptions
 						  error:&error];
 	
+    // NSLog(@"%@", [json description]);
 	for(int i = 0; i<4 ; i++){
 		NSDictionary* current = [json objectAtIndex:i];
 		
@@ -97,6 +98,8 @@
         
         [p setPersonaDescription:[current objectForKey:@"description"]];
         [p setPersonaDescriptionFr:[current objectForKey:@"description_fr"]];
+        
+        [p setPersonaNameFr:[current objectForKey:@"name_fr"]];
         [p setImgUrl:[current objectForKey:@"image"]];
 		
 		Venue *v = [[Venue alloc] init];
@@ -218,6 +221,8 @@
                 [p setPersonaId:[current objectForKey:@"id"]];
                 
                 [p setPersonaDescription:[current objectForKey:@"description"]];
+                [p setPersonaNameFr:[current objectForKey:@"name_fr"]];
+                
                 [p setPersonaDescriptionFr:[current objectForKey:@"description_fr"]];
                 [p setImgUrl:[current objectForKey:@"image"]];
                 

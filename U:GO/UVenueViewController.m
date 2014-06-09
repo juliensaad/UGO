@@ -161,9 +161,10 @@ IDMPhotoBrowser *browser;
 -(void)showContent{
     
     NSString* pdesc = ISFRENCH?[_content personaDescriptionFr]:[_content personaDescription];
+    
 	
 	[self.venueView.personaDesc setText:pdesc];
-	[self.venueView.personaName setText:[[_content name] uppercaseString]];
+	[self.venueView.personaName setText:ISFRENCH?[_content personaNameFr]:[_content name]];
 	
 	[self.venueView.venueName setText:[[_content venue] name]];
     

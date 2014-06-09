@@ -12,11 +12,16 @@
 @interface Persona : NSObject
 
 @property NSString* name;
+
+
 @property NSString* personaId;
 @property NSString* personaDescription;
 @property NSString* personaDescriptionFr;
+@property NSString* personaNameFr;
 @property NSString* imgUrl;
 
+
+-(void)makePersonaName:(NSString*)name;
 @property UIImage* img;
 @property Venue* venue;
 

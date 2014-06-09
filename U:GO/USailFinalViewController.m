@@ -40,7 +40,7 @@
 
     MKCoordinateRegion region =
     MKCoordinateRegionMakeWithDistance (
-                                        CLLocationCoordinate2DMake(45.503146, -73.571321), 3000, 3000);
+                                        CLLocationCoordinate2DMake(45.500146, -73.568321), 3000, 3000);
     [_mapView setRegion:region animated:NO];
    
    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
@@ -51,14 +51,17 @@
     
     NSMutableArray* _sailTitles = [[NSMutableArray alloc] init];
     
+    if(!ISFRENCH){
     [_sailTitles addObject:@"Café Myriade"];
     [_sailTitles addObject:@"Shopping"];
     [_sailTitles addObject:@"Place Phillips"];
     [_sailTitles addObject:@"Old Port of Montreal"];
     [_sailTitles addObject:@"Terrasse"];
     [_sailTitles addObject:@"Desert"];
-    
-    NSMutableArray* points = [[NSMutableArray alloc] init];
+        
+    }else{
+        [_sailTitles addObjectsFromArray:[NSArray arrayWithObjects:@"Café Myriade",@"Shopping",@"Place Phillips",@"Vieux-Port de Montréal",@"Terrasse",@"Dessert", nil]];
+    }
     
     for(int i = 0;i<_sailTitles.count;i++){
         CLLocationCoordinate2D coord;

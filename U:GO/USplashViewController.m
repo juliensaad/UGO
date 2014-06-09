@@ -236,6 +236,7 @@
         pageContentViewController.titleText = self.pageTitles[index];
         pageContentViewController.pageIndex = index;
         
+            
         
         return pageContentViewController;
     }else{
@@ -243,6 +244,38 @@
         PageTwoViewController* page2 = [self.storyboard instantiateViewControllerWithIdentifier:[NSString stringWithFormat:@"Page%lu",(unsigned long)index]];
         
         
+        if(ISFRENCH){
+            NSLog(@"%@%d", t1, index);
+            
+            UILabel* title = (UILabel*)[page2.view viewWithTag:1];
+            page2.t2Label.adjustsFontSizeToFitWidth = YES;
+            page2.t1Label.adjustsFontSizeToFitWidth = YES;
+            switch (index) {
+                case 1:
+                    title.text = t1;
+                    page2.t1Label.text = l0;
+                    page2.t2Label.text = l01;
+                    break;
+                case 2:
+                    title.text = t2;
+                    page2.t1Label.text = l1;
+                    page2.t2Label.text = l12;
+                    break;
+                case 3:
+                    title.text = t3;
+                    page2.t1Label.text = l2;
+                    page2.t2Label.text = l22;
+                    break;
+                case 4:
+                    title.text = t4;
+                    page2.t1Label.text = l3;
+                    page2.t2Label.text = l32;
+                    [page2.goButton setTitle:@"Débuter" forState:UIControlStateNormal];
+                    break;
+                default:
+                    break;
+            }
+        }
         BOOL found = NO;
         for(UIView *v in _pageViewController.view.subviews){
             if(v.tag==123){

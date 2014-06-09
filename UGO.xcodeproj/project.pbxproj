@@ -77,6 +77,11 @@
 		0C736E25189EF21C0079F938 /* persona_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C736E24189EF21C0079F938 /* persona_border@2x.png */; };
 		0C80E1C9193BD6030091358B /* UPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C80E1C8193BD6030091358B /* UPageContentViewController.m */; };
 		0C8EA24D187A310E0022F77C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8EA24C187A310D0022F77C /* SystemConfiguration.framework */; };
+		0C8F4F95194609CB00094694 /* type-fr0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F4F90194609CB00094694 /* type-fr0@2x.png */; };
+		0C8F4F96194609CB00094694 /* type-fr1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F4F91194609CB00094694 /* type-fr1@2x.png */; };
+		0C8F4F97194609CB00094694 /* type-fr2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F4F92194609CB00094694 /* type-fr2@2x.png */; };
+		0C8F4F98194609CB00094694 /* type-fr3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F4F93194609CB00094694 /* type-fr3@2x.png */; };
+		0C8F4F99194609CB00094694 /* type-fr4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C8F4F94194609CB00094694 /* type-fr4@2x.png */; };
 		0C9C03CE18A84752006DDD2D /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9C03CD18A84752006DDD2D /* MyLocation.m */; };
 		0CAB05F1183EB9930080E718 /* 11-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB05EF183EB9930080E718 /* 11-black@2x.png */; };
 		0CAB05F2183EB9930080E718 /* 11-turquoise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAB05F0183EB9930080E718 /* 11-turquoise@2x.png */; };
@@ -282,6 +287,11 @@
 		0C80E1C8193BD6030091358B /* UPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPageContentViewController.m; sourceTree = "<group>"; };
 		0C8EA24A187A31070022F77C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0C8EA24C187A310D0022F77C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C8F4F90194609CB00094694 /* type-fr0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type-fr0@2x.png"; sourceTree = "<group>"; };
+		0C8F4F91194609CB00094694 /* type-fr1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type-fr1@2x.png"; sourceTree = "<group>"; };
+		0C8F4F92194609CB00094694 /* type-fr2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type-fr2@2x.png"; sourceTree = "<group>"; };
+		0C8F4F93194609CB00094694 /* type-fr3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type-fr3@2x.png"; sourceTree = "<group>"; };
+		0C8F4F94194609CB00094694 /* type-fr4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "type-fr4@2x.png"; sourceTree = "<group>"; };
 		0C9C03CC18A84752006DDD2D /* MyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocation.h; sourceTree = "<group>"; };
 		0C9C03CD18A84752006DDD2D /* MyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocation.m; sourceTree = "<group>"; };
 		0CAB05EF183EB9930080E718 /* 11-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-black@2x.png"; sourceTree = "<group>"; };
@@ -505,6 +515,11 @@
 		0C4957A0192C1DFB0050B4AE /* typePictures */ = {
 			isa = PBXGroup;
 			children = (
+				0C8F4F90194609CB00094694 /* type-fr0@2x.png */,
+				0C8F4F91194609CB00094694 /* type-fr1@2x.png */,
+				0C8F4F92194609CB00094694 /* type-fr2@2x.png */,
+				0C8F4F93194609CB00094694 /* type-fr3@2x.png */,
+				0C8F4F94194609CB00094694 /* type-fr4@2x.png */,
 				0C57C683193E362100F7BA83 /* type1@2x.png */,
 				0C57C684193E362100F7BA83 /* type0@2x.png */,
 				0C57C685193E362100F7BA83 /* type4@2x.png */,
@@ -972,6 +987,7 @@
 				0C0A7BB4193E4159002639C0 /* phone1@2x.png in Resources */,
 				0C4957BC192C25620050B4AE /* 8.png in Resources */,
 				0C527F2F18D741B200A353BF /* favouritesCell@2x.png in Resources */,
+				0C8F4F95194609CB00094694 /* type-fr0@2x.png in Resources */,
 				0C0A7BC1193E502A002639C0 /* OpenSans-Light.ttf in Resources */,
 				0C57C688193E362100F7BA83 /* type1@2x.png in Resources */,
 				0C527F4A18D750F500A353BF /* favSide@2x.png in Resources */,
@@ -987,6 +1003,7 @@
 				0CC279651876079D00EDE0BF /* btn2@2x.png in Resources */,
 				0C4957B9192C25620050B4AE /* 5.png in Resources */,
 				0C527F3518D7465000A353BF /* facebookImage@2x.png in Resources */,
+				0C8F4F99194609CB00094694 /* type-fr4@2x.png in Resources */,
 				0CEF95B5192CEFDB00801D34 /* PriceTag.xib in Resources */,
 				0CDD053C183BC7A60046F89E /* 13-heart@2x.png in Resources */,
 				0CE327A118679A2300363BB9 /* page_bg@2x.png in Resources */,
@@ -1022,6 +1039,7 @@
 				0CDD053F183BC7A60046F89E /* 13-pin@2x.png in Resources */,
 				0CC68803193F41DA000998D4 /* fr-favorates@2x.png in Resources */,
 				0CB19F7418C6771F0042AFF6 /* facebook_button@2x.png in Resources */,
+				0C8F4F98194609CB00094694 /* type-fr3@2x.png in Resources */,
 				0CE3D60C18E1DD1100C724E4 /* SVProgressHUD.bundle in Resources */,
 				0CD2913819366751007AC724 /* downArrow@2x.png in Resources */,
 				0CB493FE189735F6009DF00C /* splash_o@2x.png in Resources */,
@@ -1047,6 +1065,7 @@
 				0C3CF69818D8ED0C0073CA61 /* heart@2x.png in Resources */,
 				0C527895193CA26400EA3CFB /* 04-logo@2x.png in Resources */,
 				0CB493FB18973547009DF00C /* splash_g@2x.png in Resources */,
+				0C8F4F97194609CB00094694 /* type-fr2@2x.png in Resources */,
 				0CB49416189748A9009DF00C /* suggestion_frame@2x.png in Resources */,
 				0C527F4818D750DA00A353BF /* mapFav@2x.png in Resources */,
 				0CDEE066183E4FAE00F4B5EB /* USideMenuViewController.xib in Resources */,
@@ -1057,6 +1076,7 @@
 				0CB19F7818C677A50042AFF6 /* fav_button@2x.png in Resources */,
 				0C073487193E9FFD008BA35D /* dots4@2x.png in Resources */,
 				0CE700ED1896C8430041E16E /* DroidSans.ttf in Resources */,
+				0C8F4F96194609CB00094694 /* type-fr1@2x.png in Resources */,
 				0CBF6F4818371E6B00AC77F4 /* toplogo@2x.png in Resources */,
 				0C0A7BBF193E4DF7002639C0 /* OpenSans-Italic.ttf in Resources */,
 				0C527F3318D745E400A353BF /* callButton@2x.png in Resources */,

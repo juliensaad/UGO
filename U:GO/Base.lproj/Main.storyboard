@@ -858,8 +858,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is UGO?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joY-gn-7MJ">
-                                <rect key="frame" x="84" y="69" width="152" height="28"/>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is UGO?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joY-gn-7MJ">
+                                <rect key="frame" x="0.0" y="69" width="320" height="28"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="19"/>
                                 <color key="textColor" red="0.17254902420000001" green="0.69803923369999998" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -868,6 +868,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.66000000000000003" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="t1Label" destination="CT5-F8-aZL" id="D98-ec-vNa"/>
+                        <outlet property="t2Label" destination="guH-bU-P66" id="r7o-OX-YNb"/>
                         <outlet property="welbomeLabel" destination="joY-gn-7MJ" id="rH2-4y-7p8"/>
                     </connections>
                 </viewController>
@@ -995,8 +997,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Re)discover Montreal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAK-jG-cYJ">
-                                <rect key="frame" x="49" y="35" width="221.5" height="29"/>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(Re)discover Montreal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAK-jG-cYJ">
+                                <rect key="frame" x="0.0" y="35" width="320" height="29"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="21"/>
                                 <color key="textColor" red="0.17254902420000001" green="0.69803923369999998" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1009,7 +1011,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UGO does not have paid listings, we are proud to only feature venues that we truly like ourselves." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="253.5" translatesAutoresizingMaskIntoConstraints="NO" id="6ab-F3-dU6">
-                                <rect key="frame" x="27" y="228" width="253.5" height="139"/>
+                                <rect key="frame" x="34" y="234" width="253.5" height="139"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Italic" family="Open Sans" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1018,7 +1020,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.66000000000000003" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="welbomeLabel" destination="dAK-jG-cYJ" id="sdU-kI-ivv"/>
+                        <outlet property="t1Label" destination="cAQ-ds-qSq" id="J59-H6-X0F"/>
+                        <outlet property="t2Label" destination="6ab-F3-dU6" id="twN-fo-1SF"/>
+                        <outlet property="welbomeLabel" destination="dAK-jG-cYJ" id="OWO-9p-Tcb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0w-ub-xr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1037,8 +1041,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Curators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19a-Fm-P02">
-                                <rect key="frame" x="85" y="37" width="152" height="29"/>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Curators" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19a-Fm-P02">
+                                <rect key="frame" x="0.0" y="37" width="320" height="29"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="21"/>
                                 <color key="textColor" red="0.17254902420000001" green="0.69803923369999998" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1060,7 +1064,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.66000000000000003" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="welbomeLabel" destination="19a-Fm-P02" id="BLR-Xe-l0z"/>
+                        <outlet property="t1Label" destination="wOz-fl-xJp" id="2Zh-b0-CYw"/>
+                        <outlet property="t2Label" destination="B8t-Cz-JLO" id="leq-1I-INX"/>
+                        <outlet property="welbomeLabel" destination="19a-Fm-P02" id="ywl-nQ-OX4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFn-97-Ei9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1079,8 +1085,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sail Along The City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkr-E2-oaQ">
-                                <rect key="frame" x="67" y="37" width="185.5" height="29"/>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sail Along The City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkr-E2-oaQ">
+                                <rect key="frame" x="0.0" y="37" width="320" height="29"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="21"/>
                                 <color key="textColor" red="0.17254902420000001" green="0.69803923369999998" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1119,7 +1125,9 @@ Great Places. Great Moments.</string>
                         <color key="backgroundColor" white="0.0" alpha="0.66000000000000003" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="welbomeLabel" destination="vkr-E2-oaQ" id="1ev-2D-WPx"/>
+                        <outlet property="goButton" destination="u3H-SS-HTl" id="1bX-Te-7Xc"/>
+                        <outlet property="t1Label" destination="6sF-q5-mcd" id="Jmy-wD-P2M"/>
+                        <outlet property="welbomeLabel" destination="vkr-E2-oaQ" id="KUV-mW-tUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbk-06-ztb" userLabel="First Responder" sceneMemberID="firstResponder"/>

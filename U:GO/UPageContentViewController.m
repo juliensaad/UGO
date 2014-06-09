@@ -26,6 +26,9 @@
 -(void)viewWillAppear:(BOOL)animated{
     //_goAnimation = YES;
     // if(self.goAnimation){
+    if(ISFRENCH){
+        _welcomeLabel.text = @"Bienvenue";
+    }
     
         self.view.backgroundColor = [UIColor clearColor];
         [UIView beginAnimations:nil context:nil];

@@ -179,7 +179,7 @@ IDMPhotoBrowser *browser;
 	[self.venueView.personaFace setImage:[_content img]];
     self.venueView.persona = _content;
     
-    [self.venueView.backgroundType setImage:[UIImage imageNamed:[NSString stringWithFormat:@"type%d.png",_content.venue.type]]];
+    [self.venueView.backgroundType setImage:[UIImage imageNamed:[NSString stringWithFormat:ISFRENCH?@"type-fr%d.png":@"type%d.png",_content.venue.type]]];
     [self.venueView.backgroundType setContentMode:UIViewContentModeScaleAspectFill];
     
     [self.venueView.callButton addTarget:self action:@selector(call) forControlEvents:UIControlEventTouchUpInside];

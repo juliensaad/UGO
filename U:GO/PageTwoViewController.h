@@ -12,5 +12,8 @@
 
 @property NSUInteger pageIndex;
 @property (weak, nonatomic) IBOutlet UILabel *welbomeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *t1Label;
+@property (weak, nonatomic) IBOutlet UILabel *t2Label;
+@property (weak, nonatomic) IBOutlet UIButton *goButton;
 
 @end

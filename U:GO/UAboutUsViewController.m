@@ -22,6 +22,10 @@
     }
     return self;
 }
+- (IBAction)emailClick:(id)sender {
+    NSLog(@"send the email");
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:info@ugoapp.com?subject=Hello%20UGO!&body="]];
+}
 
 - (void)viewDidLoad
 {

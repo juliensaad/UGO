@@ -44,6 +44,7 @@
 
 @property BOOL isWeeksPickUp;
 @property (weak, nonatomic) IBOutlet UIButton *wpButton;
+@property (weak, nonatomic) IBOutlet UIButton *heartButton;
 
 
 @property (weak, nonatomic) IBOutlet UGOLabel *personaName;

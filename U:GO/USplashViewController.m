@@ -316,6 +316,7 @@
             [UIView commitAnimations];
             
             if(!ISIPHONE5){
+                _dots.hidden = YES;
                 _phone.hidden = YES;
             }
         }

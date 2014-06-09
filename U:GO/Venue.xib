@@ -126,6 +126,12 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
+                                        <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scY-54-bdR">
+                                            <rect key="frame" x="229" y="12" width="19" height="19"/>
+                                            <state key="normal" image="heart.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.17254902420000001" green="0.69803923369999998" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
@@ -186,6 +192,7 @@
                 <outlet property="favButton" destination="Vfz-gf-PSb" id="58G-t9-pem"/>
                 <outlet property="favImage" destination="XH9-q7-9LU" id="5a1-ga-SDG"/>
                 <outlet property="fbButton" destination="bur-E1-gnA" id="Zn7-Uf-V97"/>
+                <outlet property="heartButton" destination="scY-54-bdR" id="310-e2-SCZ"/>
                 <outlet property="iconography" destination="Daz-mG-cbJ" id="5OR-oY-m4v"/>
                 <outlet property="middleBarView" destination="bYD-MN-i4J" id="OzL-rs-ic2"/>
                 <outlet property="personView" destination="fnR-eJ-Vt5" id="N1b-AZ-FW3"/>
@@ -217,6 +224,7 @@
         <image name="facebookImage.png" width="17" height="17"/>
         <image name="favImage.png" width="51" height="29"/>
         <image name="getDirection.png" width="77" height="29"/>
+        <image name="heart.png" width="28" height="28"/>
         <image name="pricebox.png" width="94" height="80"/>
         <image name="small-arrow.png" width="10" height="5"/>
         <image name="suggestion_frame.png" width="320" height="222"/>

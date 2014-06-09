@@ -94,6 +94,8 @@ IDMPhotoBrowser *browser;
     [_venueView.weeksPickView addSubview:_pageControl];
     [_venueView.favButton addTarget:self action:@selector(addFavourite) forControlEvents:UIControlEventTouchUpInside];
     
+    [_venueView.heartButton addTarget:self action:@selector(addFavourite) forControlEvents:UIControlEventTouchUpInside];
+    
 	
 	[self showContent];
     

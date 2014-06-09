@@ -54,6 +54,9 @@ CGRect arrowFrame;
     _timeLabel.adjustsFontSizeToFitWidth = YES;
     
     
+    if(ISIPHONE5){
+        _heartButton.hidden = YES;
+    }
     
     _iconography.layer.cornerRadius = _iconography.frame.size.height/2;
     UISwipeGestureRecognizer* swipe;

@@ -65,7 +65,7 @@
 	
 	// Do any additional setup after loading the view, typically from a nib.
 	[self.view setBackgroundColor:UIColorFromRGB(UGOGRAY)];
-    
+    @try {
 	_data = [[WSingleton sharedManager]webContent];
 	
 	NSArray *personaLabels = [[NSArray alloc] initWithObjects:_persona1,_persona2,_persona3,_persona4, nil];
@@ -80,16 +80,24 @@
 		[[personaLabels objectAtIndex:i] setFont:FONT_EXTRA_SMALL];
 	}
 	//[_selectGuideLabel setFont:FONT_BOLD_SMALL];
+
+        [URequests getImageWithURL:[[_data objectAtIndex:0] personaId] andImageView:_im1];
+        [URequests getImageWithURL:[[_data objectAtIndex:1] personaId] andImageView:_im2];
+        [URequests getImageWithURL:[[_data objectAtIndex:2] personaId] andImageView:_im3];
+        [URequests getImageWithURL:[[_data objectAtIndex:3] personaId] andImageView:_im4];
+        
+        [_im1 setType:[[[_data objectAtIndex:0] venue] type]];
+        [_im2 setType:[[[_data objectAtIndex:1] venue] type]];
+        [_im3 setType:[[[_data objectAtIndex:2] venue] type]];
+        [_im4 setType:[[[_data objectAtIndex:3] venue] type]];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {
+        
+    }
 	
-	[URequests getImageWithURL:[[_data objectAtIndex:0] personaId] andImageView:_im1];
-	[URequests getImageWithURL:[[_data objectAtIndex:1] personaId] andImageView:_im2];
-	[URequests getImageWithURL:[[_data objectAtIndex:2] personaId] andImageView:_im3];
-	[URequests getImageWithURL:[[_data objectAtIndex:3] personaId] andImageView:_im4];
-	
-	[_im1 setType:[[[_data objectAtIndex:0] venue] type]];
-	[_im2 setType:[[[_data objectAtIndex:1] venue] type]];
-	[_im3 setType:[[[_data objectAtIndex:2] venue] type]];
-	[_im4 setType:[[[_data objectAtIndex:3] venue] type]];
 	
 }
 

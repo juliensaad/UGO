@@ -31,6 +31,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    if(ISFRENCH){
+        [(UILabel*)[self.view viewWithTag:1] setText:@"Nous sommes un start-up à Montréal passionné de notre ville"];
+        
+        [(UILabel*)[self.view viewWithTag:2] setText:@"Nous vous offrons une façon originale de (re)découvrir la métropole par l'élaboration d’un regard personnalisé dans tous les lieux sélectionnés."];
+        
+        [(UILabel*)[self.view viewWithTag:3] setText:@"Nous sommes l'équipe UGO!"];
+        
+        [[self.view viewWithTag:4] setHidden:YES];
+        
+        [[self.view viewWithTag:5] setHidden:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning

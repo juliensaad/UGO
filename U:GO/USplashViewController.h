@@ -36,7 +36,7 @@
 
 #define t1 @"Qu'est-ce que UGO?"
 #define t2 @"(Re)découvrez votre ville"
-#define t3 @"Les bloggeurs"
+#define t3 @"Les blogueurs"
 #define t4 @"Naviguez à travers la ville"
 
 #define l0 @"UGO n’est pas qu’une simple application téléphonique, c’est aussi une nouvelle façon de redécouvrir votre ville."

@@ -61,4 +61,6 @@
 #define lABOUT (ISFRENCH?@"    À PROPOS DE UGO":@"    ABOUT UGO")
 #define lUNLOCKALL (ISFRENCH?@"Pour pouvoir faire plus:":@"To unlock all features, please")
 
+#define WS_URL @"http://thirdbridge.net/ugo/"
+
 #endif

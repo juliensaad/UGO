@@ -16,7 +16,7 @@
 
 +(void)getEventsWithSuccessFunction:(SEL)selector andSender:(id)sender{
 
-	NSString *url = @"http://t-b.ca/ugodev/webservice/get_active_personas.php";
+	NSString *url = [NSString stringWithFormat:@"%@%@",WS_URL,@"webservice/get_active_personas.php"];
 	
 	NSURLSession *session = [NSURLSession sharedSession];
 	[[session dataTaskWithURL:[NSURL URLWithString:url]
@@ -30,7 +30,7 @@
 			}] resume];
 }
 
-#define kImageURL @"http://ugodev.t-b.ca/img/"
+#define kImageURL [NSString stringWithFormat:@"%@%@",WS_URL,@"img/"]
 +(void)getImageWithURL:(NSString*)url andImageView:(UIImageView*)im{
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@persona%@.jpg", kImageURL, url]]];
 	
@@ -167,7 +167,7 @@
         
         NSDictionary *params = @{@"venue_id": venueId,
                                  @"user_id": [[[WSingleton sharedManager] defaults]objectForKey:@"userid"]};
-        [manager POST:@"http://ugodev.t-b.ca/webservice/add_favourite.php" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [manager POST:[NSString stringWithFormat:@"%@%@",WS_URL,@"webservice/add_favourite.php"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
             [SVProgressHUD showImage:[UIImage imageNamed:@"heart"] status:@"Added to favourites!"];
             NSLog(@"SUCCESS: %@", [responseObject description]);
             
@@ -188,7 +188,7 @@
         
         manager.responseSerializer = [AFJSONResponseSerializer serializer];
 
-        [manager POST:@"http://ugodev.t-b.ca/webservice/update_user.php" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [manager POST:[NSString stringWithFormat:@"%@%@",WS_URL,@"webservice/update_user.php"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
             [SVProgressHUD showImage:[UIImage imageNamed:@"heart"] status:@"User created!"];
             NSLog(@"SUCCESS: %@", [responseObject description]);
             
@@ -207,7 +207,7 @@
         NSDictionary *params = @{@"user_id": [[[WSingleton sharedManager] defaults] objectForKey:@"userid"]};
         manager.responseSerializer = [AFJSONResponseSerializer serializer];
         
-        [manager POST:@"http://ugodev.t-b.ca/webservice/get_favourites.php" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [manager POST:[NSString stringWithFormat:@"%@%@",WS_URL,@"webservice/get_favourites.php"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"SUCCESS: %@", [responseObject description]);
             [SVProgressHUD dismiss];
             
@@ -279,7 +279,7 @@
         
         NSDictionary *params = @{@"venue_id": venueId,
                                  @"user_id": [[[WSingleton sharedManager] defaults]objectForKey:@"userid"]};
-        [manager POST:@"http://ugodev.t-b.ca/webservice/delete_favourite.php" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [manager POST:[NSString stringWithFormat:@"%@%@",WS_URL,@"webservice/delete_favourite.php"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"SUCCESS: %@", [responseObject description]);
             
             

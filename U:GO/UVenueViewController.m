@@ -37,7 +37,7 @@ IDMPhotoBrowser *browser;
     }
     return self;
 }
-#define kImageURL @"http://ugodev.t-b.ca/"
+#define kImageURL @"http://thirdbridge.net/ugo/"
 
 -(void)viewDidLayoutSubviews{
     // [self.venueView.bottomContentView setFrame:CGRectMake(self.venueView.bottomContentView.frame.origin.x, self.venueView.bottomContentView.frame.origin.x-70, self.venueView.bottomContentView.frame.size.width, self.venueView.bottomContentView.frame.size.height)];
@@ -51,16 +51,17 @@ IDMPhotoBrowser *browser;
     self.imageOperationQueue.maxConcurrentOperationCount = 4;
     
     self.imageCache = [[NSCache alloc] init];
-    
-    [self.venueView.venueDesc setSelectable:NO];
-    [self.venueView.venueDesc setEditable:NO];
-    
+ 
     
 	// Do any additional setup after loading the view.
 	NSArray *subviewArray = [[NSBundle mainBundle] loadNibNamed:@"Venue" owner:self options:nil];
 	_venueView = [subviewArray objectAtIndex:0];
 	[self.view addSubview:_venueView];
 	
+    
+    [self.venueView.venueDesc setSelectable:NO];
+    [self.venueView.venueDesc setEditable:NO];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 	[self.navigationController.navigationBar setTranslucent:NO];
 	

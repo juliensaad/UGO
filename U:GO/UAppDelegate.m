@@ -20,6 +20,8 @@
 	//[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:3]];
 	[FBLoginView class];
 	[self downloadAppContent];
+    
+       
 	
 	
     return YES;

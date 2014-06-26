@@ -38,6 +38,13 @@
     [super viewDidLoad];
 	
 
+    // Init xib files
+    //dispatch_async(dispatch_get_main_queue(), ^{
+    
+        //});
+    
+
+    
 	CGRect gFrame = [_gLetter frame];
 	gFrame.origin.y = -80;
 	[_gLetter setFrame:gFrame];
@@ -103,6 +110,8 @@
 
 						 } completion:^(BOOL finished){
                              
+                             // Preload xib file
+                              [[NSBundle mainBundle] loadNibNamed:@"Venue" owner:self options:nil];
                              if([[NSUserDefaults standardUserDefaults] boolForKey:@"firstTime"]){
                                  [URequests getEventsWithSuccessFunction:@selector(venueTime) andSender:self];
                                  

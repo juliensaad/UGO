@@ -41,6 +41,9 @@
 		case 3:
 			self.layer.borderColor = UIColorFromRGB(UGO_TYPE4).CGColor;
 			break;
+        case 4:
+			self.layer.borderColor = UIColorFromRGB(UGO_TYPE5).CGColor;
+			break;
 			
 		default:
 			break;

@@ -213,6 +213,7 @@ IDMPhotoBrowser *browser;
     self.venueView.wpButton.backgroundColor = pageColor;
     self.venueView.bestTime.textColor = pageColor;
     self.venueView.priceLabel.textColor = pageColor;
+
     self.venueView.titleBar.backgroundColor = pageColor;
     
     

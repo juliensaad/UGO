@@ -127,6 +127,9 @@
                 case 3:
                     color = UIColorFromRGB(UGO_TYPE4);
                     break;
+                case 4:
+                    color = UIColorFromRGB(UGO_TYPE5);
+                    break;
                 default:
                     break;
             }

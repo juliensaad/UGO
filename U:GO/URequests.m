@@ -109,7 +109,7 @@
 			[v setLocation:[venuInfo objectForKey:@"location"]];
             [v setFbUrl:[NSString stringWithFormat:@"fb://profile/%@",[venuInfo objectForKey:@"facebook_url"]]];
 			[v setDescriptionEn:[venuInfo objectForKey:@"description_en"]];
-			[v setDescriptionFr:@"description_fr"];
+			[v setDescriptionFr:[venuInfo objectForKey:@"description_fr"]];
 			[v setType:[[venuInfo objectForKey:@"type"] intValue]];
             
             // Set the right color
@@ -236,7 +236,7 @@
                     [v setLocation:[venuInfo objectForKey:@"location"]];
                     [v setFbUrl:[NSString stringWithFormat:@"fb://profile/%@",[venuInfo objectForKey:@"facebook_url"]]];
                     [v setDescriptionEn:[venuInfo objectForKey:@"description_en"]];
-                    [v setDescriptionFr:@"description_fr"];
+                    [v setDescriptionFr:[venuInfo objectForKey:@"description_fr"]];
                     [v setType:[[venuInfo objectForKey:@"type"] intValue]];
                     [v setVenueId:[NSString stringWithFormat:@"%d", i]];
                     [v setDBID:[venuInfo objectForKey:@"id"]];

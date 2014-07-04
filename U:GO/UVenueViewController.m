@@ -213,8 +213,9 @@ IDMPhotoBrowser *browser;
     self.venueView.wpButton.backgroundColor = pageColor;
     self.venueView.bestTime.textColor = pageColor;
     self.venueView.priceLabel.textColor = pageColor;
-
+    self.pageControl.currentPageIndicatorTintColor = pageColor;
     self.venueView.titleBar.backgroundColor = pageColor;
+    self.pageControl.userInteractionEnabled = NO;
     
     
     [self.venueView.fbButton addTarget:self action:@selector(facebookPage) forControlEvents:UIControlEventTouchUpInside];

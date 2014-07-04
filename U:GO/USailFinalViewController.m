@@ -57,7 +57,7 @@
     [_sailTitles addObject:@"Place Phillips"];
     [_sailTitles addObject:@"Old Port of Montreal"];
     [_sailTitles addObject:@"Terrasse"];
-    [_sailTitles addObject:@"Desert"];
+    [_sailTitles addObject:@"Dessert"];
         
     }else{
         [_sailTitles addObjectsFromArray:[NSArray arrayWithObjects:@"Café Myriade",@"Shopping",@"Place Phillips",@"Vieux-Port de Montréal",@"Terrasse",@"Dessert", nil]];

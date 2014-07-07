@@ -286,6 +286,8 @@ IDMPhotoBrowser *browser;
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+        self.screenName = @"Venue Screen - iOS";
+    
     [self.venueView setIsWeeksPickUp:NO];
     //   [self.venueView.weeksPickView setFrame:CGRectMake(0, self.venueView.weeksPickView.frame.origin.y-PERSONPOSY, yScreenWidth, yScreenHeight)];
     //  [self.venueView.personView setFrame:CGRectMake(0, -PERSONPOSY, yScreenWidth, yScreenHeight)];

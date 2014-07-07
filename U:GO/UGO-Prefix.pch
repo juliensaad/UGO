@@ -23,4 +23,5 @@
     #import "UGOLabel.h"
     #import <FacebookSDK/FacebookSDK.h>
     #import "SVProgressHUD.h"
+    #import "GAI.h"
 #endif

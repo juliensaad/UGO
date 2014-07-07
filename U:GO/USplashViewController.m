@@ -33,6 +33,11 @@
 #define U_X_FINAL 56.5
 #define O_X_FINAL 197
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.screenName = @"Splash Screen - iOS";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

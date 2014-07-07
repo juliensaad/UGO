@@ -10,6 +10,7 @@
 
 @interface USailFinalViewController ()
 
+@property NSMutableArray* sailAddresses;
 @end
 
 @implementation USailFinalViewController
@@ -21,6 +22,10 @@
         // Custom initialization
     }
     return self;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.screenName = @"Map Screen - iOS";
 }
 
 - (void)viewDidLoad
@@ -50,6 +55,10 @@
     // NSMutableArray* coordinates = [[NSMutableArray alloc] init];
     
     NSMutableArray* _sailTitles = [[NSMutableArray alloc] init];
+    _sailAddresses = [[NSMutableArray alloc] init];
+    
+    [_sailAddresses addObjectsFromArray:[NSArray arrayWithObjects:@"Café Myriade",@"Shopping",@"Place Phillips",@"Vieux-Port de Montréal",@"Terrasse",@"Dessert", nil]];
+
     
     if(!ISFRENCH){
     [_sailTitles addObject:@"Café Myriade"];
@@ -94,8 +103,7 @@
         point.coordinate = coord;
         point.title = _sailTitles[i];
         
-        point.subtitle = [NSString stringWithFormat:@"%d", i+1];
-        
+        point.subtitle = [_sailAddresses objectAtIndex:i];
 
         [self.mapView addAnnotation:point];
     }
@@ -123,7 +131,14 @@
         
         
         UILabel* l = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, annotationView.frame.size.width, annotationView.frame.size.height-5)];
-        l.text = [annotationView.annotation subtitle];
+        
+        NSString* pinText;
+        for(int i = 0;i<_sailAddresses.count;i++){
+            if([_sailAddresses[i] isEqualToString:[annotationView.annotation subtitle]])
+                pinText = [NSString stringWithFormat:@"%d", i+1];
+                
+        }
+        l.text = pinText;
         l.adjustsFontSizeToFitWidth = YES;
         l.textAlignment = NSTextAlignmentCenter;
         l.textColor = [UIColor whiteColor];

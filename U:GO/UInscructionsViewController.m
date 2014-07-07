@@ -27,6 +27,10 @@
     }
     return self;
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.screenName = @"Instructions Screen - iOS";
+}
 
 - (void)viewDidLoad
 {

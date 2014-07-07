@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UInscructionsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface UInscructionsViewController : GAITrackedViewController<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *returnmapClick;
 - (IBAction)returnClick:(id)sender;

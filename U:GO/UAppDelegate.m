@@ -9,6 +9,8 @@
 #import "UAppDelegate.h"
 #import "URequests.h"
 #import "WSingleton.h"
+#import "GAI.h"
+#import "config.h"
 
 @implementation UAppDelegate
 
@@ -16,15 +18,56 @@
 {
     // Override point for customization after application launch.
 
-	//fade from the launch image to the interface
-	//[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:3]];
+    
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-52250247-2"];
+    
+    
 	[FBLoginView class];
 	[self downloadAppContent];
     
+   
+    
        
-	
+    // ask to send notifications
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     UIRemoteNotificationTypeBadge |
+     UIRemoteNotificationTypeAlert |
+     UIRemoteNotificationTypeSound];
+    
+    [self scheduleNotifications];
+    
 	
     return YES;
+}
+
+-(void)scheduleNotifications{
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    NSCalendar *gregCalendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *dateComponent = [gregCalendar components:NSYearCalendarUnit  | NSWeekCalendarUnit fromDate:[NSDate date]];
+    
+    [dateComponent setWeekday:2]; // For Monday
+    [dateComponent setHour:19];
+    [dateComponent setMinute:30];
+    
+    
+    NSDate *fireDate = [gregCalendar dateFromComponents:dateComponent];
+    
+    UILocalNotification *notification = [[UILocalNotification alloc]init];
+    [notification setAlertBody:ISFRENCH?@"Blabla":@"BON MATIN!!!"];
+    [notification setFireDate:fireDate];
+    notification.repeatInterval = NSWeekCalendarUnit;
+    [notification setTimeZone:[NSTimeZone defaultTimeZone]];
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
 }
 
 -(void)downloadAppContent{

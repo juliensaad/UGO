@@ -63,7 +63,7 @@
     NSDate *fireDate = [gregCalendar dateFromComponents:dateComponent];
     
     UILocalNotification *notification = [[UILocalNotification alloc]init];
-    [notification setAlertBody:ISFRENCH?@"Blabla":@"BON MATIN!!!"];
+    [notification setAlertBody:ISFRENCH?@"Blabla":@"This week's venues are out! Go check them out now!"];
     [notification setFireDate:fireDate];
     notification.repeatInterval = NSWeekCalendarUnit;
     [notification setTimeZone:[NSTimeZone defaultTimeZone]];

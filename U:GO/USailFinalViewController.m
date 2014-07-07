@@ -57,7 +57,7 @@
     NSMutableArray* _sailTitles = [[NSMutableArray alloc] init];
     _sailAddresses = [[NSMutableArray alloc] init];
     
-    [_sailAddresses addObjectsFromArray:[NSArray arrayWithObjects:@"Café Myriade",@"Shopping",@"Place Phillips",@"Vieux-Port de Montréal",@"Terrasse",@"Dessert", nil]];
+    [_sailAddresses addObjectsFromArray:[NSArray arrayWithObjects:@"1432 Mackay St, Montreal, QC H3G 2H7", @"1300 Rue Sherbrooke Ouest, Montréal, QC H3G 1G2", @"1193 Place Phillips, Montréal, QC H3B 3C9", @"333 Rue de la Commune Ouest, Montréal, QC H2Y 2E2", @"Quais Du Vieux-Port, Montreal, QC H3C 2W3", @"92 Rue de la Gauchetière Ouest, Montréal, QC H2Z 1C1", nil]];
 
     
     if(!ISFRENCH){
